@@ -8,12 +8,12 @@ public class CircleRunner {
         double c = circle.getC();
         System.out.println("The circumference is " + c);
 
-        double a = circle.getA();
+        double a = circle.getArea();
         System.out.println("The area is " + a);
 
         circle.changeR(1);
 
-        a = getArea();
+        a = circle.getArea();
         System.out.println("The new area is " + a);
     }
 
