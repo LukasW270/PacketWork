@@ -9,17 +9,17 @@ public class Travel {
     }
 
     public int goByVan(){
-        int b = (people - (people % 8))/8;
+        int b = (int) Math.ceil(people/8.0);
         return b;
     }
 
     public int goByCanoe(){
-        int c = (people - (people % 3))/3;
+        int c = (int) Math.ceil(people/3.0);
         return c;
     }
 
     public int goByPlane(){
-        int p = (people - (people % 12))/12;
+        int p = (int) Math.ceil(people/12.0);
         return p;
     }
 
